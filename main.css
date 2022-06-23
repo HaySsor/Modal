@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #333;
+}
+
+.modal {
+	max-width: 500px;
+	width: 96%;
+	border-radius: 15px;
+	background-color: royalblue;
+	overflow: hidden;
+}
+
+header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2px;
+	height: 80px;
+}
+h2 {
+	white-space: nowrap;
+	width: 70%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 1.3rem;
+}
+button {
+	padding: 20px 10px;
+	border-radius: 10px;
+	border: none;
+	flex-shrink: 0;
+}
+
+.modal main {
+	padding: 8px;
+	height: clamp(50px, 50vh, 150px);
+	background-color: #fff;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	overflow: auto;
+}
